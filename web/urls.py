@@ -1,7 +1,9 @@
-from django.urls import path
+from django.urls import path, include
 
-from web.views import Index
+from event.views import AddView
+
+app_name = "web"
 
 urlpatterns = [
-    path("", Index.as_view(), name="index"),
+    path("", include("web.urls")),
 ]

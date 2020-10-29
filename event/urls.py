@@ -5,5 +5,5 @@ from event.views import AddView
 app_name = "event"
 
 urlpatterns = [
-    path("", include("web.urls")),
+    path("", include("event.urls")),
 ]
