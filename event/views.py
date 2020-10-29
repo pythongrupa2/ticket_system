@@ -1,8 +1,6 @@
+from django.shortcuts import render
+from django.views import View
 
 
-class AddView():
-    template_name = "event.html"
-
-    @classmethod
-    def as_view(cls):
-        pass
+def event_list(request):
+    return render(request, 'event/even_list.html', {})
