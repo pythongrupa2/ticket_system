@@ -13,8 +13,10 @@ import os
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #Anna
 
 
 # Quick-start development settings - unsuitable for production
@@ -60,7 +62,7 @@ ROOT_URLCONF = 'ticket_system.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, ""), os.path.join(BASE_DIR, "templates")], #Anna
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
