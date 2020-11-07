@@ -3,9 +3,9 @@ from . import views
 
 app_name = "event"
 
-from event.views import frontpage #Anna
+from event.views import front_page
 
 urlpatterns = [
-    path("",frontpage, name="frontpage"), #Anna
+    path("", views.front_page, name="front_page"), #Anna
     path("", views.event_list, name="event_list"),
 ]
