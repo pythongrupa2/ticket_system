@@ -7,4 +7,4 @@ def event_list(request):
 
 
 def front_page(request):
-    return render(request, 'event/front_page.html', {})
+    return render(request, 'front_page.html', {})

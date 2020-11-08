@@ -7,5 +7,5 @@ from event.views import front_page
 
 urlpatterns = [
     path("", views.front_page, name="front_page"), #Anna
-    path("", views.event_list, name="event_list"),
+    path("event", views.event_list, name="event_list"),
 ]
