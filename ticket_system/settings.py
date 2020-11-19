@@ -34,8 +34,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "event.apps.EventConfig",
     "phone_field",
-    "event",
     "user",
     "web",
     "testing",
